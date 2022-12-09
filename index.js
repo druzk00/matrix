@@ -53,3 +53,6 @@ function updateErrorText() {
     document.getElementById("error-container").innerHTML = errorText;
   }
   setInterval(updateErrorText, 100);
+  
+
+  

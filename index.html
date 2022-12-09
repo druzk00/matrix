@@ -1,14 +1,76 @@
 <html lang="en">
 <head>
 
+
+
+    <script>
+        // Function to show the "You are logged in" message
+        function showLoginMessage() {
+          var message = document.createElement("p");
+          message.innerHTML = "You are logged in";
+          message.id = "login-message";
+          document.body.appendChild(message);
+        }
+      
+        // Function to hide the "You are logged in" message
+        function hideLoginMessage() {
+          var message = document.getElementById("login-message");
+          document.body.removeChild(message);
+        }
+      
+        // When the user logs in, show the "You are logged in" message
+        // (Assumes that you have already implemented a login function)
+        login(email, password);
+        showLoginMessage();
+      
+        // Set a timer to hide the message after 5 seconds
+        setTimeout(hideLoginMessage, 5000);
+      </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <center>
         <form>
-            <label for="username">Username:</label><br>
-            <input type="text" id="username" name="username"><br>
+            <h1>Sign up</h1>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Sign up">
+          </form>
+          
+          <!-- Login form -->
+          <form>
+            <h1>Login</h1>
+            <h1 style="color: aliceblue;">sad</h1><label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
             <label for="password">Password:</label><br>
             <input type="password" id="password" name="password"><br><br>
             <input type="submit" value="Login">
-          </form> 
+          </form>
+         
     </center>
 
     <meta charset="UTF-8">
